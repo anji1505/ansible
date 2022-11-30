@@ -1,0 +1,12 @@
+---
+
+- name: create nginx container using docker compose
+  become: yes
+  hosts: localhost
+  tasks:
+    - name: docker_compose nginx deployment
+      community.docker.docker_compose:
+        project_src: /home/anji/ansible/ansible-docker-compose-deployment
+        files:
+          - "docker-compose.yml"
+        state: present
