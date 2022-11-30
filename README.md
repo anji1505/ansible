@@ -83,7 +83,8 @@
      ![Screenshot_20221201_022215](https://user-images.githubusercontent.com/116748521/204905608-f926f09a-80f6-4c1f-a24f-7e6d33e1bbad.png)
 
 *  And finally I used one more command like.
-
+     ``` docker exec -it my-container /bin/bash cd /tmp;cat EOF >> abcd text << EOF ```
+     
      ![Screenshot_20221201_022453](https://user-images.githubusercontent.com/116748521/204906061-4a2e3b27-edd7-43ab-a7ac-11fff19f9813.png)
 
 *  And finally it was successfully completed.
