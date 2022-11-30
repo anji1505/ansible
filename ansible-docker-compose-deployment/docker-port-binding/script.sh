@@ -1,1 +1,1 @@
-docker run --name my-container -p 8000:80 -d nginx:latest
+docker run --name anji-container -p 8000:80 -d nginx:latest
