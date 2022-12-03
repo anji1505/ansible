@@ -24,12 +24,11 @@
 
 *  And also I created a playbook.yml file
 
-    ``` ---
-
-        - name: create nginx container using docker compose
-          become: yes
-          hosts: localhost
-          tasks:
+     ```---
+         - name: create nginx container using docker compose
+           become: yes
+           hosts: localhost
+           tasks:
             - name: docker_compose nginix deployment
               community.docker.docker_compose:
                  project_src: /home/anji/ansible-docker-compose-deployment
@@ -37,9 +36,9 @@
                    - "docker-compose.yml"
                  state: present
 
-          become: true
-          vars:
-            - ansible_python_interpreter: /usr/bin/python3 ```
+           become: true
+           vars:
+            - ansible_python_interpreter: /usr/bin/python3```
 	
 
 
