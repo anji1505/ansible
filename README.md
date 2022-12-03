@@ -12,6 +12,8 @@
        image: nginx:latest
        ports:
          - 80:80 ```
+
+
   
      ![Screenshot_20221201_012437](https://user-images.githubusercontent.com/116748521/204895657-6fab6058-61e0-4625-b16d-3d771690e82a.png)
 
