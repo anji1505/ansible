@@ -16,7 +16,7 @@
 
 *  I composed a docker-compose.yml file by using the below command.
   
-     ``` sudo docker compose up -d  ```
+      sudo docker compose up -d 
     
     ![Screenshot_20221201_013209](https://user-images.githubusercontent.com/116748521/204896855-9fa4aa82-aba4-48d7-a36c-e00cc76082df.png)
 
