@@ -12,7 +12,7 @@
         nginx_container:
          image: nginx:latest
          ports:
-            - 80:80 ```
+            - 80:80
 
 *  I composed a docker-compose.yml file by using the below command.
   
