@@ -7,6 +7,13 @@
 
 *  First of all I created a docker-compose.yml file
  
+     version: "3.3"
+     services:
+      nginx_container:
+       image: nginx:latest
+       ports:
+         - 80:80
+  
     ![Screenshot_20221201_012437](https://user-images.githubusercontent.com/116748521/204895657-6fab6058-61e0-4625-b16d-3d771690e82a.png)
 
 *  I composed a docker-compose.yml file by using the below command.
