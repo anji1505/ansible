@@ -6,16 +6,13 @@
 *  I chosen one assignment 
 
 *  First of all I created a docker-compose.yml file
+    
     ```version: "3.3"
      services:
       nginx_container:
        image: nginx:latest
        ports:
          - 80:80 ```
-
-
-  
-     ![Screenshot_20221201_012437](https://user-images.githubusercontent.com/116748521/204895657-6fab6058-61e0-4625-b16d-3d771690e82a.png)
 
 *  I composed a docker-compose.yml file by using the below command.
   
@@ -27,7 +24,23 @@
 
 *  And also I created a playbook.yml file
 
-    ![Screenshot_20221201_012523](https://user-images.githubusercontent.com/116748521/204895695-dfe3f072-d7f8-45cc-9d82-a25da5c7915e.png)
+    ``` ---
+
+- name: create nginx container using docker compose
+  become: yes
+  hosts: localhost
+  tasks:
+   - name: docker_compose nginix deployment
+     community.docker.docker_compose:
+       project_src: /home/anji/ansible-docker-compose-deployment
+       files:
+         - "docker-compose.yml"
+       state: present
+
+     become: true
+     vars:
+       ansible_python_interpreter: /usr/bin/python3 ```
+	
 
 
 *  After that I run a command like.
