@@ -7,7 +7,7 @@
 
 *  First of all I created a docker-compose.yml file
     
-    ```version: "3.3"
+       version: "3.3"
        services:
         nginx_container:
          image: nginx:latest
