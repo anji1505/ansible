@@ -24,7 +24,7 @@
 
 *  And also I created a playbook.yml file
 
-     ```---
+         ---
          - name: create nginx container using docker compose
            become: yes
            hosts: localhost
@@ -38,7 +38,7 @@
 
            become: true
            vars:
-            - ansible_python_interpreter: /usr/bin/python3```
+            - ansible_python_interpreter: /usr/bin/python
 	
 
 
