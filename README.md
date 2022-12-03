@@ -1,7 +1,7 @@
-# **** Docker - Ansible Assignment ****
+# Docker - Ansible Assignment 
 
 
-## ** Workflow:-
+## Workflow:-
 
 *  I chosen one assignment 
 
